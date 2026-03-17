@@ -2,7 +2,7 @@
 
 A label set is a named list of categories that you want Sieve to sort your images into. This is the core of how Sieve works — you define the categories, Sieve does the sorting.
 
----
+***
 
 ## What is a label set?
 
@@ -10,26 +10,27 @@ Think of a label set like a set of folders you want to end up with. If you want 
 
 You can have as many label sets as you want, saved and ready to use. A research lab might have one label set for cell culture work, another for mouse experiments, and another for imaging sessions. Each is saved separately and can be selected at classification time.
 
----
+***
 
 ## The default label set
 
 Sieve comes with one built-in label set for biological research:
 
 **Biology (default)**
-- Drosophila
-- Mice
-- Insects
-- Celegans
-- Microorganisms
-- Microscopy
-- Gel
-- Petriplate
-- Biochemistry
+
+* Drosophila
+* Mice
+* Insects
+* Celegans
+* Microorganisms
+* Microscopy
+* Gel
+* Petriplate
+* Biochemistry
 
 You can use this as-is, edit it to fit your workflow, or create entirely new label sets.
 
----
+***
 
 ## Creating a label set
 
@@ -41,9 +42,9 @@ You can use this as-is, edit it to fit your workflow, or create entirely new lab
 
 Your new label set is now available to select when classifying images.
 
-> **Screenshot placeholder — label set creation screen**
+<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
----
+***
 
 ## Tips for writing good labels
 
@@ -57,7 +58,7 @@ The quality of your labels directly affects classification accuracy. A few thing
 
 **Keep the list focused.** A label set with 5–10 labels generally performs better than one with 30. If you have many categories, consider splitting them into multiple label sets for different sessions.
 
----
+***
 
 ## Editing a label set
 
@@ -68,7 +69,7 @@ The quality of your labels directly affects classification accuracy. A few thing
 
 Changes take effect immediately for any future classification sessions.
 
----
+***
 
 ## Deleting a label set
 
@@ -78,7 +79,7 @@ Changes take effect immediately for any future classification sessions.
 
 Deleting a label set does not affect any images already sorted using it.
 
----
+***
 
 ## Selecting a label set for classification
 
@@ -86,39 +87,43 @@ When you start a new classification session, Sieve will ask which label set to u
 
 You can also set a default label set in **Settings** if you mostly use the same one.
 
----
+***
 
 ## Example label sets for different research domains
 
 **Cell biology**
-- HeLa Cells
-- Neuron
-- Fibroblast
-- Stem Cell
-- Tissue Section
-- Fluorescence
+
+* HeLa Cells
+* Neuron
+* Fibroblast
+* Stem Cell
+* Tissue Section
+* Fluorescence
 
 **Mouse experiments**
-- Brain Section
-- Liver
-- Kidney
-- Tumor
-- Whole Animal
-- Behaviour
+
+* Brain Section
+* Liver
+* Kidney
+* Tumor
+* Whole Animal
+* Behaviour
 
 **PCR and gel work**
-- Agarose Gel
-- Western Blot
-- SDS PAGE
-- PCR Product
-- Ladder
+
+* Agarose Gel
+* Western Blot
+* SDS PAGE
+* PCR Product
+* Ladder
 
 **Microscopy techniques**
-- Brightfield
-- Confocal
-- Electron Microscopy
-- Phase Contrast
-- Fluorescence
+
+* Brightfield
+* Confocal
+* Electron Microscopy
+* Phase Contrast
+* Fluorescence
 
 Feel free to adapt any of these or build your own from scratch. See [Using Sieve for Anything](beyond-the-lab.md) for label set ideas outside of research.
 

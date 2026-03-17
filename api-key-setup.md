@@ -4,23 +4,23 @@ Sieve uses AI to classify your images. To do this it needs access to an AI provi
 
 This page explains how to get a key for each supported provider and enter it into Sieve.
 
----
+***
 
 ## Which provider should I choose?
 
-| Provider | Cost | Best for |
-|----------|------|----------|
-| OpenRouter | Free tier available | Getting started, no credit card needed |
-| Ollama | Free, runs locally | Private or sensitive images, offline use |
-| OpenAI | Paid | High accuracy, willing to pay |
-| Anthropic | Paid | High accuracy, willing to pay |
-| Google Gemini | Free tier with limits | Already have a Google account |
+| Provider      | Cost                  | Best for                                 |
+| ------------- | --------------------- | ---------------------------------------- |
+| OpenRouter    | Free tier available   | Getting started, no credit card needed   |
+| Ollama        | Free, runs locally    | Private or sensitive images, offline use |
+| OpenAI        | Paid                  | High accuracy, willing to pay            |
+| Anthropic     | Paid                  | High accuracy, willing to pay            |
+| Google Gemini | Free tier with limits | Already have a Google account            |
 
 **If you are unsure, start with OpenRouter.** It is free, takes two minutes to set up, and works well for most use cases.
 
 **If your images are sensitive** — patient data, proprietary research, unpublished results — use Ollama. It runs entirely on your own machine and your images never leave your device at all.
 
----
+***
 
 ## OpenRouter (recommended for getting started)
 
@@ -37,26 +37,29 @@ The default model in Sieve for OpenRouter is `qwen/qwen2.5-vl-72b-instruct:free`
 
 > **Free tier limits:** OpenRouter's free models allow around 20 requests per minute and 200 per day. For most users this is more than enough. If you are processing very large batches you may hit the daily limit — in that case either wait until the next day or switch to a paid model.
 
-> **Screenshot placeholder — API key entry screen**
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
----
+***
 
 ## Ollama (local, offline, private)
 
 Ollama runs an AI model directly on your computer. No internet connection is needed after setup, and your images never leave your device under any circumstances.
 
 **This is the right choice if:**
-- You work with sensitive, confidential, or patient images
-- Your institution has data policies that prevent using cloud services
-- You want complete privacy and control
+
+* You work with sensitive, confidential, or patient images
+* Your institution has data policies that prevent using cloud services
+* You want complete privacy and control
 
 **Setup:**
 
 1. Install Ollama from [ollama.com](https://ollama.com)
 2. Open a terminal and pull the vision model:
+
 ```bash
 ollama pull llava
 ```
+
 3. Ollama runs automatically in the background once installed
 4. Open Sieve, go to **Settings → API Key**
 5. Select **Ollama** as your provider
@@ -64,7 +67,7 @@ ollama pull llava
 
 > **Note on speed:** Ollama runs on your own hardware, so classification will be slower than cloud providers, especially on older machines. On a modern laptop with a decent GPU, expect a few seconds per image. On older hardware it may take 10–20 seconds per image.
 
----
+***
 
 ## OpenAI
 
@@ -77,7 +80,7 @@ ollama pull llava
 
 Sieve uses `gpt-4o` for OpenAI which has strong vision capabilities.
 
----
+***
 
 ## Anthropic
 
@@ -90,7 +93,7 @@ Sieve uses `gpt-4o` for OpenAI which has strong vision capabilities.
 
 Sieve uses `claude-sonnet-4-6` for Anthropic.
 
----
+***
 
 ## Google Gemini
 
@@ -102,13 +105,13 @@ Sieve uses `claude-sonnet-4-6` for Anthropic.
 
 Gemini has a free tier but with rate limits. If you hit them frequently, consider switching to OpenRouter or Ollama.
 
----
+***
 
 ## Where is my key stored?
 
 Your API key is stored locally on your device using secure encrypted storage. It is never sent to any Sieve server because Sieve has no servers. The key is only used to make direct API calls from your device to your chosen provider.
 
----
+***
 
 ## Changing your provider or key
 

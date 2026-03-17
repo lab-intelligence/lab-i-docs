@@ -78,8 +78,6 @@ If you accidentally tap Deny, go to your phone's **Settings → Apps → Sieve �
 
 **On desktop:** A folder picker will open. Choose or create a folder where you want Sieve to store your organised images. This can always be changed later in Settings.
 
-> **Screenshot placeholder — storage setup screen**
-
 ***
 
 ## Step 4 — First launch: API key setup
